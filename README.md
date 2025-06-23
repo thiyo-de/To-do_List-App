@@ -19,7 +19,7 @@ A simple and user-friendly To-Do List application that allows you to add, delete
 
 ## 📸 Screenshot
 
-![To-Do List App Screenshot](screenshot.png)
+![To-Do List App Screenshot](./assets/screenshot.png)
 
 ---
 
