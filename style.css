@@ -1,3 +1,96 @@
-.crossed{
-    text-decoration: line-through;
+/* Import Satoshi font */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Glass-style card */
+.todo-app {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 35px 30px;
+  width: 420px;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-app:hover {
+  box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
+
+/* Input field */
+.todo-app input {
+  width: 65%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background: #f5f5f5;
+  transition: all 0.2s ease;
+}
+
+.todo-app input:focus {
+  background: #fff;
+  box-shadow: 0 0 0 2px #007bff44;
+}
+
+/* Button */
+.todo-app button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-weight: 600;
+  border: none;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-app button:hover {
+  background: linear-gradient(135deg, #0056b3, #0096c7);
+}
+
+/* Task list */
+.tasks {
+  margin-top: 25px;
+}
+
+.tasks ul {
+  list-style-type: none;
+}
+
+.tasks li {
+  background-color: #ffffffdd;
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.tasks li:hover {
+  transform: translateY(-2px);
 }
